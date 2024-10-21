@@ -1,0 +1,5 @@
+/* 
+Create a TypeScript function that takes two arrays as parameters 
+and determines whether the two arrays contain the same elements in any order. 
+The elements must be of the same type and can occur multiple times in the arrays. 
+*/

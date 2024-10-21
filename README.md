@@ -1,1 +1,0 @@
-# diligent-academy-assesment-katas
