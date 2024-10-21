@@ -1,3 +1,5 @@
+import assert from 'assert';
+
 /* 
 Create a TypeScript function that determines whether two strings are anagrams of each other.
 An anagram is two words that consist of the same letters, but in a different order. 
@@ -10,13 +12,13 @@ function isAnagram/* generic type */(/* parameters */): /* return type */ {
 
 // Tests
 
-console.log(isAnagram("listen", "silent")); // true
-console.log(isAnagram("hello", "world")); // false
-console.log(isAnagram("A man, a plan, a canal: Panama!", "Panama: a canal, a plan, a man, A")); // true
-console.log(isAnagram("dormitory", "dirty room")); // true
-console.log(isAnagram("anagram", "margana")); // false
-console.log(isAnagram("cinema", "iceman")); // true
-console.log(isAnagram("foo", "bar")); // false
-console.log(isAnagram("", "")); // true
-console.log(isAnagram("a", "aa")); // false
-console.log(isAnagram("a ", "a")); // true
+assert.equal(isAnagram("listen", "silent"), true); // true
+assert.equal(isAnagram("hello", "world"), false); // false
+assert.equal(isAnagram("A man, a plan, a canal: Panama!", "Panama: a canal, a plan, a man, A"), true); // true
+assert.equal(isAnagram("dormitory", "dirty room"), true); // true
+assert.equal(isAnagram("anagram", "margana"), false); // false
+assert.equal(isAnagram("cinema", "iceman"), true); // true
+assert.equal(isAnagram("foo", "bar"), false); // false
+assert.equal(isAnagram("", ""), true); // true
+assert.equal(isAnagram("a", "aa"), false); // false
+assert.equal(isAnagram("a ", "a"), true); // true
